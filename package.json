@@ -1,8 +1,9 @@
 {
   "name": "wallet-api-eth-common",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "etherem api common",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run lint && rimraf dist && tsc",
@@ -15,7 +16,7 @@
     "url": "git+https://nb_met@bitbucket.org/nb_met/wallet-api-eth-common.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "met",
   "license": "ISC",
   "homepage": "https://bitbucket.org/nb_met/wallet-api-eth-common#readme",
   "dependencies": {
