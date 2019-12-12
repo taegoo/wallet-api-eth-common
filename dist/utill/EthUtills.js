@@ -129,7 +129,7 @@ class EthUtills {
         console.log('!!! oriValue : ' + oriValue);
         const addValue = this.toWei(addInput, addUnit);
         console.log('!!! addValue : ' + addValue);
-        return oriValue.sub(addValue);
+        return oriValue.add(addValue);
     }
     sub(oriInput, oriUnit, subInput, subUnit) {
         const oriValue = this.toWei(oriInput, oriUnit);
