@@ -180,8 +180,8 @@ class EthUtills {
 
         switch (type) {
             case eHistory.withraw: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
-            case eHistory.transferFrom: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
-            case eHistory.transferTo: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
+            case eHistory.transferFrom: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
+            case eHistory.transferTo: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
             case eHistory.deposit: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
             default: throw new Error();
         }

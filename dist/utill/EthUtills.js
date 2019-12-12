@@ -150,10 +150,10 @@ class EthUtills {
                 return this.sub(oriInput, oriUnit, calcInput, calcUnit);
                 break;
             case __1.eHistory.transferFrom:
-                return this.sub(oriInput, oriUnit, calcInput, calcUnit);
+                return this.add(oriInput, oriUnit, calcInput, calcUnit);
                 break;
             case __1.eHistory.transferTo:
-                return this.add(oriInput, oriUnit, calcInput, calcUnit);
+                return this.sub(oriInput, oriUnit, calcInput, calcUnit);
                 break;
             case __1.eHistory.deposit:
                 return this.add(oriInput, oriUnit, calcInput, calcUnit);
