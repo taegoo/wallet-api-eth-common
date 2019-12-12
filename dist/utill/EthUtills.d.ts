@@ -1,5 +1,5 @@
 import BN from 'bn.js';
-declare class EthUtill {
+declare class EthUtills {
     /**
      * Returns value of unit in Wei
      *
@@ -17,5 +17,5 @@ declare class EthUtill {
     isLessThan(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean;
     calc(type: string, oriInput: string, oriUnit: string, calcInput: string, calcUnit: string): BN;
 }
-declare const _default: EthUtill;
-export = _default;
+export declare const EthUtill: EthUtills;
+export {};

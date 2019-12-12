@@ -13,4 +13,5 @@ __export(require("./exception"));
 __export(require("./generator/generator"));
 __export(require("./response/IResponse"));
 __export(require("./result/IResult"));
+__export(require("./utill/EthUtills"));
 //# sourceMappingURL=index.js.map
