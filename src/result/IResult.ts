@@ -38,7 +38,7 @@ export class RecordBook {
     public walletId: number;
     public coin: string;
     public type: string;
-    public requester: string;
+    public toFrom: string;
     public total: string;
     public amount: string;
     public unit: string;

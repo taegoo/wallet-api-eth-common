@@ -31,7 +31,7 @@ export declare class RecordBook {
     walletId: number;
     coin: string;
     type: string;
-    requester: string;
+    toFrom: string;
     total: string;
     amount: string;
     unit: string;
