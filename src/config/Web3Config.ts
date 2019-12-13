@@ -4,4 +4,5 @@ export class Web3Coinfig implements IConfig {
     user: string;
     pwd: string;
     endpoint: string;
+    ws: string;
 }
