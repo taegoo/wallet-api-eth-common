@@ -12,7 +12,7 @@ const ConfigLengthException_1 = require("../exception/ConfigLengthException");
 const enums_1 = require("../enums/enums");
 class ConfigLoader {
     constructor(path, folder) {
-        this.env = enums_1.eEnv.dev;
+        this.env = enums_1.eEnv.local;
         this.dic = {};
         if (undefined !== process.env.NODE_ENV) {
             if ('' !== process.env.NODE_ENV) {

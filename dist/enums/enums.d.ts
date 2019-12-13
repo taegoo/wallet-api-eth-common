@@ -8,6 +8,7 @@ export declare enum eConfig {
     web3 = "web3"
 }
 export declare enum eEnv {
+    local = "local",
     dev = "dev",
     prod = "prod"
 }

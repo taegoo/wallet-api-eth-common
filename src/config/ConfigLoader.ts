@@ -5,7 +5,7 @@ import { eEnv, eConfig } from '../enums/enums';
 
 
 export class ConfigLoader {
-    protected env: string = eEnv.dev;
+    protected env: string = eEnv.local;
 
     protected dic: { [key: string]: { [key: string]: IConfig } } = {};
 

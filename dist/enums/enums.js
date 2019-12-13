@@ -13,6 +13,7 @@ var eConfig;
 })(eConfig = exports.eConfig || (exports.eConfig = {}));
 var eEnv;
 (function (eEnv) {
+    eEnv["local"] = "local";
     eEnv["dev"] = "dev";
     eEnv["prod"] = "prod";
 })(eEnv = exports.eEnv || (exports.eEnv = {}));

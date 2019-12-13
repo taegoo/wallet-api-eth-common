@@ -10,6 +10,7 @@ export enum eConfig {
 }
 
 export enum eEnv {
+    local = 'local',
     dev = 'dev',
     prod = 'prod'
 }
