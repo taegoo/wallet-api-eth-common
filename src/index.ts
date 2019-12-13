@@ -1,8 +1,4 @@
-export * from './config/ConfigLoader';
-export * from './config/IConfig';
-export * from './config/MainPath';
-export * from './config/Web3Config';
-export * from './config/Cryptocurrency';
+export * from './config';
 
 export * from './enums/enums';
 export * from './error/errorcode';
