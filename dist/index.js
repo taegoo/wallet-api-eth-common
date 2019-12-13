@@ -11,6 +11,7 @@ __export(require("./enums/enums"));
 __export(require("./error/errorcode"));
 __export(require("./exception"));
 __export(require("./generator/generator"));
+__export(require("./loggger/ILogger"));
 __export(require("./response/IResponse"));
 __export(require("./result/IResult"));
 __export(require("./utill/EthUtills"));
