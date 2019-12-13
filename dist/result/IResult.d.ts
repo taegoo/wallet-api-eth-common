@@ -12,6 +12,7 @@ export declare class RtCreatedAddress implements IResult {
     coin: string;
     passPharse: string;
     address: string;
+    uuid: string;
 }
 /**
  * Wrt : Web3 Result
