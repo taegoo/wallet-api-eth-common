@@ -25,8 +25,8 @@ var eHistory;
 (function (eHistory) {
     eHistory["deposit"] = "deposit";
     eHistory["withraw"] = "withraw";
-    eHistory["transferTo"] = "transferTo";
-    eHistory["transferFrom"] = "tranferFrom";
+    // transferTo = 'transferTo',
+    // transferFrom = 'tranferFrom'
 })(eHistory = exports.eHistory || (exports.eHistory = {}));
 var eState;
 (function (eState) {

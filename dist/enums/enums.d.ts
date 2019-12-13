@@ -17,9 +17,7 @@ export declare enum eRole {
 }
 export declare enum eHistory {
     deposit = "deposit",
-    withraw = "withraw",
-    transferTo = "transferTo",
-    transferFrom = "tranferFrom"
+    withraw = "withraw"
 }
 export declare enum eState {
     request = "request",

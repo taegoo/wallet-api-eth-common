@@ -145,16 +145,13 @@ class EthUtills {
         return bValue.lt(aValue);
     }
     calc(type, oriInput, oriUnit, calcInput, calcUnit) {
+        // comment : 아 이런 코드.
         switch (type) {
             case __1.eHistory.withraw:
                 return this.sub(oriInput, oriUnit, calcInput, calcUnit);
                 break;
-            case __1.eHistory.transferFrom:
-                return this.add(oriInput, oriUnit, calcInput, calcUnit);
-                break;
-            case __1.eHistory.transferTo:
-                return this.sub(oriInput, oriUnit, calcInput, calcUnit);
-                break;
+            // case eHistory.transferFrom: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
+            // case eHistory.transferTo: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
             case __1.eHistory.deposit:
                 return this.add(oriInput, oriUnit, calcInput, calcUnit);
                 break;
