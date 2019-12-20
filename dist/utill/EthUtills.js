@@ -141,8 +141,8 @@ class EthUtills {
         console.log(aValue.toString());
         const bValue = this.toWei(bInput, bUnit);
         console.log(bValue.toString());
-        console.log(aValue.lt(bValue));
-        return bValue.lt(aValue);
+        console.log(aValue.lte(bValue));
+        return bValue.lte(aValue);
     }
     calc(type, oriInput, oriUnit, calcInput, calcUnit) {
         // comment : 아 이런 코드.
