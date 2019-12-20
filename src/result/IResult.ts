@@ -14,7 +14,7 @@ export interface IResult {
  */
 export class RtCreatedAddress implements IResult {
     public coin: string;
-    public passPharse: string;
+    public privateKey: string;
     public address: string;
     public uuid: string;
 }

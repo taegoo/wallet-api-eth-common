@@ -10,7 +10,7 @@ export interface IResult {
  */
 export declare class RtCreatedAddress implements IResult {
     coin: string;
-    passPharse: string;
+    privateKey: string;
     address: string;
     uuid: string;
 }
