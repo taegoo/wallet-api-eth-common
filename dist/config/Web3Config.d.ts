@@ -1,7 +1,11 @@
 import { IConfig } from './IConfig';
 export declare class Web3Coinfig implements IConfig {
-    user: string;
-    pwd: string;
-    endpoint: string;
-    ws: string;
+    infura: {
+        ep: string;
+        ws: string;
+    };
+    fastnode: {
+        ep: string;
+        ws: string;
+    };
 }
