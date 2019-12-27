@@ -157,16 +157,30 @@ class EthUtills {
     }
 
 
+    /**
+     * a가 b보다 작은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThan(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean {
         const aValue = this.toWei(aInput, aUnit);
         const bValue = this.toWei(bInput, bUnit);
-        return bValue.lte(aValue);
+        return aValue.lt(bValue);
     }
 
+    /**
+     * a가 b보다 작거나 같은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThanEqual(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean {
         const aValue = this.toWei(aInput, aUnit);
         const bValue = this.toWei(bInput, bUnit);
-        return bValue.lte(aValue);
+        return aValue.lte(bValue);
     }
 
     calc(type: string, oriInput: string, oriUnit: string, calcInput: string, calcUnit: string): BN {

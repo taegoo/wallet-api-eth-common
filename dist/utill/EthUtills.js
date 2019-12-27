@@ -134,15 +134,29 @@ class EthUtills {
         const subtractValue = this.toWei(subInput, subUnit);
         return oriValue.sub(subtractValue);
     }
+    /**
+     * a가 b보다 작은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThan(aInput, aUnit, bInput, bUnit) {
         const aValue = this.toWei(aInput, aUnit);
         const bValue = this.toWei(bInput, bUnit);
-        return bValue.lte(aValue);
+        return aValue.lt(bValue);
     }
+    /**
+     * a가 b보다 작거나 같은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThanEqual(aInput, aUnit, bInput, bUnit) {
         const aValue = this.toWei(aInput, aUnit);
         const bValue = this.toWei(bInput, bUnit);
-        return bValue.lte(aValue);
+        return aValue.lte(bValue);
     }
     calc(type, oriInput, oriUnit, calcInput, calcUnit) {
         // comment : 아 이런 코드.

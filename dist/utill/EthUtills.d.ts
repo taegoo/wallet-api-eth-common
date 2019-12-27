@@ -14,7 +14,21 @@ declare class EthUtills {
     toWei(etherInput: string | number, unit: string): BN;
     add(oriInput: string | number, oriUnit: string, addInput: string, addUnit: string): BN;
     sub(oriInput: string, oriUnit: string, subInput: string, subUnit: string): BN;
+    /**
+     * a가 b보다 작은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThan(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean;
+    /**
+     * a가 b보다 작거나 같은 경우
+     * @param aInput aInput
+     * @param aUnit aUnit
+     * @param bInput bInput
+     * @param bUnit bUnit
+     */
     isLessThanEqual(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean;
     calc(type: string, oriInput: string, oriUnit: string, calcInput: string, calcUnit: string): BN;
 }
