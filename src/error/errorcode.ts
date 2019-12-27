@@ -10,7 +10,8 @@ export enum eErrorCode {
     NoneExistCoinAddress = 103,
 
     NotEnoughBalance = 104,
-
+    NoneExistWithdrawToken = 105,
+    InvalidWithdrawToken = 106,
 
 
     Internal = 500,

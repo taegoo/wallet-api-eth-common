@@ -9,6 +9,8 @@ var eErrorCode;
     eErrorCode[eErrorCode["AlreadyHasEthAddress"] = 102] = "AlreadyHasEthAddress";
     eErrorCode[eErrorCode["NoneExistCoinAddress"] = 103] = "NoneExistCoinAddress";
     eErrorCode[eErrorCode["NotEnoughBalance"] = 104] = "NotEnoughBalance";
+    eErrorCode[eErrorCode["NoneExistWithdrawToken"] = 105] = "NoneExistWithdrawToken";
+    eErrorCode[eErrorCode["InvalidWithdrawToken"] = 106] = "InvalidWithdrawToken";
     eErrorCode[eErrorCode["Internal"] = 500] = "Internal";
     eErrorCode[eErrorCode["Web3Error"] = 900] = "Web3Error";
     eErrorCode[eErrorCode["DbError"] = 1000] = "DbError";
