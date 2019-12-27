@@ -18,6 +18,9 @@ exports.RtBalance = RtBalance;
 class RtWallet {
 }
 exports.RtWallet = RtWallet;
+class RtWithdraw {
+}
+exports.RtWithdraw = RtWithdraw;
 class RecordBook {
 }
 exports.RecordBook = RecordBook;

@@ -28,6 +28,12 @@ export declare class RtWallet implements IResult {
     address: RtCreatedAddress;
     balance: RtBalance;
 }
+export declare class RtWithdraw implements IResult {
+    coin: string;
+    uuid: string;
+    amount: string;
+    unit: string;
+}
 export declare class RecordBook {
     walletId: number;
     coin: string;

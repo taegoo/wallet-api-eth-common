@@ -35,6 +35,14 @@ export class RtWallet implements IResult {
     public balance: RtBalance;
 }
 
+export class RtWithdraw implements IResult {
+    public coin: string;
+    public uuid: string;
+    public amount: string;
+    public unit: string;
+}
+
+
 export class RecordBook {
     public walletId: number;
     public coin: string;
