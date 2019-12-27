@@ -26,16 +26,20 @@ var eHistory;
 (function (eHistory) {
     eHistory["deposit"] = "deposit";
     eHistory["withraw"] = "withraw";
-    // transferTo = 'transferTo',
-    // transferFrom = 'tranferFrom'
 })(eHistory = exports.eHistory || (exports.eHistory = {}));
 var eState;
 (function (eState) {
     eState["request"] = "request";
-    eState["pending"] = "pending";
     eState["confirm"] = "confirm";
-    eState["cancel"] = "cancel";
+    eState["fail"] = "fail";
 })(eState = exports.eState || (exports.eState = {}));
+var eWithdraw;
+(function (eWithdraw) {
+    eWithdraw["request"] = "request";
+    eWithdraw["prepared"] = "prepared";
+    eWithdraw["failed"] = "failed";
+    eWithdraw["completed"] = "completed";
+})(eWithdraw = exports.eWithdraw || (exports.eWithdraw = {}));
 exports.EtherDefaultUnit = 'wei';
 // noether: '0',
 // wei:        '1',

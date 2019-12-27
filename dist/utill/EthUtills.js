@@ -126,9 +126,7 @@ class EthUtills {
     }
     add(oriInput, oriUnit, addInput, addUnit) {
         const oriValue = this.toWei(oriInput, oriUnit);
-        console.log('!!! oriValue : ' + oriValue);
         const addValue = this.toWei(addInput, addUnit);
-        console.log('!!! addValue : ' + addValue);
         return oriValue.add(addValue);
     }
     sub(oriInput, oriUnit, subInput, subUnit) {
@@ -138,10 +136,12 @@ class EthUtills {
     }
     isLessThan(aInput, aUnit, bInput, bUnit) {
         const aValue = this.toWei(aInput, aUnit);
-        console.log(aValue.toString());
         const bValue = this.toWei(bInput, bUnit);
-        console.log(bValue.toString());
-        console.log(aValue.lte(bValue));
+        return bValue.lte(aValue);
+    }
+    isLessThanEqual(aInput, aUnit, bInput, bUnit) {
+        const aValue = this.toWei(aInput, aUnit);
+        const bValue = this.toWei(bInput, bUnit);
         return bValue.lte(aValue);
     }
     calc(type, oriInput, oriUnit, calcInput, calcUnit) {
@@ -150,8 +150,6 @@ class EthUtills {
             case __1.eHistory.withraw:
                 return this.sub(oriInput, oriUnit, calcInput, calcUnit);
                 break;
-            // case eHistory.transferFrom: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
-            // case eHistory.transferTo: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
             case __1.eHistory.deposit:
                 return this.add(oriInput, oriUnit, calcInput, calcUnit);
                 break;

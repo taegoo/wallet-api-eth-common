@@ -15,6 +15,7 @@ declare class EthUtills {
     add(oriInput: string | number, oriUnit: string, addInput: string, addUnit: string): BN;
     sub(oriInput: string, oriUnit: string, subInput: string, subUnit: string): BN;
     isLessThan(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean;
+    isLessThanEqual(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean;
     calc(type: string, oriInput: string, oriUnit: string, calcInput: string, calcUnit: string): BN;
 }
 export declare const EthUtill: EthUtills;

@@ -145,34 +145,27 @@ class EthUtills {
     }
 
     add(oriInput: string | number, oriUnit: string, addInput: string, addUnit: string): BN {
-
         const oriValue = this.toWei(oriInput, oriUnit);
-        console.log('!!! oriValue : ' + oriValue);
-
         const addValue = this.toWei(addInput, addUnit);
-        console.log('!!! addValue : ' + addValue);
-
         return oriValue.add(addValue);
     }
 
     sub(oriInput: string, oriUnit: string, subInput: string, subUnit: string): BN {
-
         const oriValue = this.toWei(oriInput, oriUnit);
-
         const subtractValue = this.toWei(subInput, subUnit);
-
         return oriValue.sub(subtractValue);
     }
 
 
     isLessThan(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean {
         const aValue = this.toWei(aInput, aUnit);
-        console.log(aValue.toString());
-
         const bValue = this.toWei(bInput, bUnit);
-        console.log(bValue.toString());
-        console.log(aValue.lte(bValue));
+        return bValue.lte(aValue);
+    }
 
+    isLessThanEqual(aInput: string, aUnit: string, bInput: string, bUnit: string): boolean {
+        const aValue = this.toWei(aInput, aUnit);
+        const bValue = this.toWei(bInput, bUnit);
         return bValue.lte(aValue);
     }
 
@@ -180,8 +173,6 @@ class EthUtills {
         // comment : 아 이런 코드.
         switch (type) {
             case eHistory.withraw: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
-            // case eHistory.transferFrom: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
-            // case eHistory.transferTo: return this.sub(oriInput, oriUnit, calcInput, calcUnit); break;
             case eHistory.deposit: return this.add(oriInput, oriUnit, calcInput, calcUnit); break;
             default: throw new Error();
         }

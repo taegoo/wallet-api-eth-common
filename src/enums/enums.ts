@@ -6,33 +6,38 @@ export enum eCoin {
 export enum eConfig {
     db = 'db',
     server = 'server',
-    web3 = 'web3'
+    web3 = 'web3',
 }
 
 export enum eEnv {
     local = 'local',
     dev = 'dev',
-    prod = 'prod'
+    prod = 'prod',
 }
 
 export enum eRole {
     enterprise = 'enterprise',
-    member = 'member'
+    member = 'member',
 }
 
 export enum eHistory {
     deposit = 'deposit',
     withraw = 'withraw',
-    // transferTo = 'transferTo',
-    // transferFrom = 'tranferFrom'
 }
 
 export enum eState {
     request = 'request',
-    pending = 'pending',
-    confirm= 'confirm',
-    cancel = 'cancel'
+    confirm = 'confirm',
+    fail = 'fail',
 }
+
+export enum eWithdraw {
+    request = 'request',
+    prepared = 'prepared',
+    failed = 'failed',
+    completed = 'completed',
+}
+
 
 export const EtherDefaultUnit = 'wei';
 

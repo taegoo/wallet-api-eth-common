@@ -22,8 +22,13 @@ export declare enum eHistory {
 }
 export declare enum eState {
     request = "request",
-    pending = "pending",
     confirm = "confirm",
-    cancel = "cancel"
+    fail = "fail"
+}
+export declare enum eWithdraw {
+    request = "request",
+    prepared = "prepared",
+    failed = "failed",
+    completed = "completed"
 }
 export declare const EtherDefaultUnit = "wei";
