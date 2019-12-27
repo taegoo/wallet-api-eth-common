@@ -40,6 +40,7 @@ export class RtWithdraw implements IResult {
     public uuid: string;
     public amount: string;
     public unit: string;
+    public to: string;
 }
 
 

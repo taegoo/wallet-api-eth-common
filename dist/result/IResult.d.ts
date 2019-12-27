@@ -33,6 +33,7 @@ export declare class RtWithdraw implements IResult {
     uuid: string;
     amount: string;
     unit: string;
+    to: string;
 }
 export declare class RecordBook {
     walletId: number;
