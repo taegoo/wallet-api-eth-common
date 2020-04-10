@@ -11,4 +11,5 @@ export class Web3Coinfig implements IConfig {
         ep: string;
         ws: string;
     };
+    coldWallet: string;
 }
