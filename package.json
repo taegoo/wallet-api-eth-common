@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://nb_met@bitbucket.org/nb_met/wallet-api-eth-common.git"
+    "url": "https://github.com/taegoo/wallet-api-eth-common.git"
   },
   "keywords": [],
   "author": "met",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nb_met/wallet-api-eth-common#readme",
+  "homepage": "",
   "dependencies": {
     "@types/bn.js": "^4.11.5",
     "@types/node": "^12.6.8",
