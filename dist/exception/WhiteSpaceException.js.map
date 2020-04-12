@@ -1,1 +1,0 @@
-{"version":3,"file":"WhiteSpaceException.js","sourceRoot":"","sources":["../../src/exception/WhiteSpaceException.ts"],"names":[],"mappings":";;AACA,yFAAyF;AACzF,MAAa,mBAAoB,SAAQ,KAAK;IAC1C;QACI,KAAK,CAAC,eAAe,CAAC,CAAC,CAAC,sCAAsC;QAC9D,MAAM,CAAC,cAAc,CAAC,IAAI,EAAE,GAAG,CAAC,MAAM,CAAC,SAAS,CAAC,CAAC,CAAC,0BAA0B;IACjF,CAAC;CACJ;AALD,kDAKC"}
